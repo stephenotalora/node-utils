@@ -1,0 +1,28 @@
+{
+  "name": "node-utils",
+  "version": "0.0.1",
+  "description": "common node utilities for a server app",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stephenotalora/node-utils.git"
+  },
+  "keywords": [
+    "node",
+    "utils",
+    "helpers"
+  ],
+  "author": "Jonathan S. Otalora",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/stephenotalora/node-utils/issues"
+  },
+  "homepage": "https://github.com/stephenotalora/node-utils#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.1.2"
+  }
+}
