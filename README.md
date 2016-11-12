@@ -7,12 +7,12 @@ Functional utilities for node
 ### loadConfig
 - sync - loads a config file from your application directory.
 
-...load a config file from a config directory
+   load a config file from a config directory
 
 ```javascript
 loadConfig();
 ```
-...defaults to:
+   defaults to:
 
 ```
 Project
@@ -22,7 +22,7 @@ Project
      └─── config-dev (.js|.json)
 ```
 
-...load from an environment variable
+   load from an environment variable
 ```bash
 export NODE_ENV=qa
 ```
@@ -36,18 +36,18 @@ Project
      └─── config-qa (.js|.json)
 ```
 
-...You can optionally specify additional arguments such as directory path, directory name and file name:
+   You can optionally specify additional arguments such as directory path, directory name and file name:
 ```javascript
 loadConfig('./src', 'test', 'test-config');
 ```
 
-...loads from:
+   file loads from:
 ```
 Project
 │
 └─── src
      │
      └─── test
-		      │
-					└─── test-config (.js | .json)
+          │
+          └─── test-config (.js | .json)
 ```
