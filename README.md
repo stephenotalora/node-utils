@@ -6,11 +6,14 @@ Functional utilities for node
 - Simplifies common routines while setting up a `node.js` application
 
 ### loadConfig
+----
+
 - sync - loads a config file from your application directory.
 
    load a config file from a config directory
 
 ```javascript
+const {loadConfig} = require('node-utils')();
 loadConfig();
 ```
    defaults to:
@@ -52,4 +55,14 @@ Project
           │
           └─── test-config (.js | .json)
 ```
-   Note that if you don't specify an extension name the function will default to a `.json` file format
+
+1. Note that if you don't specify an extension name the function will default to a `.json` file format.
+2. You can require the module in one of two flavours
+   ```javascript
+   const {loadConfig} = require('node-utils')()
+   ```
+   or
+   ```javascript
+   const {loadConfig} = require('node-utils')(__dirname);
+   ```
+   The former allows you to specify a path individually per function call or bind a path to all subsequent calls.

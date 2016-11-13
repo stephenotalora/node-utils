@@ -1,6 +1,6 @@
 const chai = require('chai');
 const spies = require('chai-spies');
-const {loadConfig} = require('./../../src/loadConfig');
+const {loadConfig} = require('./../../src/loadConfig')(__dirname);
 
 const expect = chai.expect;
 chai.use(spies);
@@ -16,14 +16,14 @@ describe('loadConfig', () => {
 	// ===========================================================================
 	it("should load a config file based on its arguements", () => {
 		expect(
-			loadConfig(__dirname, './../mocks', 'test')
+			loadConfig('./../mocks', 'test')
 		).to.deep.equal(mock);
 	});
 
 	// ===========================================================================
 	it("should load a deeply nested file and fall back to a default file name", () => {
 		expect(
-			loadConfig(__dirname,'./../mocks/config/test/')
+			loadConfig('./../mocks/config/test/')
 		).to.deep.equal(mock);
 	});
 
@@ -31,9 +31,9 @@ describe('loadConfig', () => {
 	it("can take three args", () => {
 		const config = {loadConfig};
 		const spy = chai.spy.on(config, 'loadConfig');
-		const result = config.loadConfig(__dirname, './../mocks/', 'test');
+		const result = config.loadConfig('./../mocks/', 'test');
 
-		expect(spy).to.have.been.called.with(__dirname, './../mocks/', 'test');
+		expect(spy).to.have.been.called.with('./../mocks/', 'test');
 		expect(result).to.deep.equal(mock);
 	});
 });

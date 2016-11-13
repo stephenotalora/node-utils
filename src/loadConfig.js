@@ -33,7 +33,11 @@ const loadConfig = (path, dir, fileName) => {
 	return require(_fullPath);
 };
 
-module.exports = {
-	getExtension,
-	loadConfig
+module.exports = (dirname) => {
+	const _loadConfig = dirname && dirname.length ? loadConfig.bind(null, dirname) : loadConfig
+
+	return {
+		getExtension,
+		loadConfig: _loadConfig
+	}
 };

@@ -1,5 +1,12 @@
-const {loadConfig} = require('./src/loadConfig');
+/**
+ * @author Jonathan S. Otalora
+ * 2016 - All rights reserved
+ */
 
-module.exports = {
-	loadConfig
-};
+/**
+ * @param  {String} args - additional information that can be passed to sub-modules
+ * @return {Object} exports
+ */
+module.exports = (args) => ({
+	loadConfig: require('./src/loadConfig')(args)
+});
