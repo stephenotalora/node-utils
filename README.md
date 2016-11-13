@@ -6,11 +6,10 @@ Functional utilities for node
 - Simplifies common routines while setting up a `node.js` application
 
 ### loadConfig
-----
+---------------
 
 - sync - loads a config file from your application directory.
-
-   load a config file from a config directory
+  load a config file from a config directory
 
 ```javascript
 const {loadConfig} = require('node-utils')();
