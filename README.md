@@ -1,5 +1,6 @@
 # node-utils
 Functional utilities for node
+
 - written in ES6
 - requires node 6 and above
 - Simplifies common routines while setting up a `node.js` application
@@ -38,7 +39,7 @@ Project
 
    You can optionally specify additional arguments such as directory path, directory name and file name:
 ```javascript
-loadConfig('./src', 'test', 'test-config');
+loadConfig(__dirname, 'test', 'test-config');
 ```
 
    file loads from:
@@ -51,3 +52,4 @@ Project
           │
           └─── test-config (.js | .json)
 ```
+   Note that if you don't specify an extension name the function will default to a `.json` file format
