@@ -27,7 +27,7 @@ Project
 export NODE_ENV=qa
 ```
 
-...loads from:
+   loads from:
 ```
 Project
 │
