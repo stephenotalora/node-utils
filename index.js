@@ -8,5 +8,5 @@
  * @return {Object} exports
  */
 module.exports = (args) => ({
-	loadConfig: require('./src/loadConfig')(args)
+	loadConfig: require('./src/loadConfig')(args).loadConfig
 });
