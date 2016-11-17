@@ -5,6 +5,30 @@ Functional utilities for node
 - requires node 6 and above
 - Simplifies common routines while setting up a `node.js` application
 
+### isDevEnv
+---------------
+- reads from `process.env` and assumes some defaults.
+- Ex.
+```bash
+export NODE_ENV=dev;
+```
+```javascript
+const {isDevEnv} = require('node-utils')();
+isDevEnv(); // {isDev: true, env: 'dev'};
+```
+```javascript
+const {isDev} = require('node-utils')();
+isDev(); // true
+```
+```bash
+export NODE_ENV=prod;
+```
+```javascript
+const {isDevEnv, isDev} = require('node-utils')();
+isDev(); // false
+isDevEnv(); // {isDev: false, env: 'prod'};
+```
+
 ### loadConfig
 ---------------
 
