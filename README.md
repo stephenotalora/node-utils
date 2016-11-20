@@ -32,8 +32,7 @@ isDevEnv(); // {isDev: false, env: 'prod'};
 ### loadConfig
 ---------------
 
-- sync - loads a config file from your application directory.
-  load a config file from a config directory
+- sync - loads a config file from your project directory.
 
 ```javascript
 const {loadConfig} = require('node-utils')();
