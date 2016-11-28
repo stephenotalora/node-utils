@@ -1,0 +1,11 @@
+{
+  "name": "node-toolbox",
+  "version": "0.0.1",
+  "dependencies": {
+    "app-root-dir": {
+      "version": "1.0.2",
+      "from": "app-root-dir@latest",
+      "resolved": "https://registry.npmjs.org/app-root-dir/-/app-root-dir-1.0.2.tgz"
+    }
+  }
+}
