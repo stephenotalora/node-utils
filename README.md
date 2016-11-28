@@ -1,4 +1,4 @@
-# node-utils
+# node-toolbox
 Functional utilities for node
 
 - written in ES6

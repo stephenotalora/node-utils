@@ -1,5 +1,5 @@
 {
-  "name": "node-utils",
+  "name": "node-toolbox",
   "version": "0.0.1",
   "description": "common node utilities for a server app",
   "main": "index.js",
