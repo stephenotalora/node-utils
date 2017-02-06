@@ -1,15 +1,12 @@
 {
   "name": "node-toolbox",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "common node utilities for a server app",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "node_modules/jasmine/bin/jasmine.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/stephenotalora/node-utils.git"
-  },
+  "repository": "git+https://github.com/stephenotalora/node-utils.git",
   "keywords": [
     "node",
     "utils",
@@ -22,11 +19,7 @@
   },
   "homepage": "https://github.com/stephenotalora/node-utils#readme",
   "devDependencies": {
-    "chai": "^3.5.0",
-    "chai-spies": "^0.7.1",
-    "mocha": "^3.1.2"
+    "jasmine": "^2.5.3"
   },
-  "dependencies": {
-    "app-root-dir": "^1.0.2"
-  }
+  "dependencies": {}
 }
