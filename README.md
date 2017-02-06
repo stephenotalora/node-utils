@@ -13,18 +13,18 @@ Functional utilities for node
 export NODE_ENV=dev;
 ```
 ```javascript
-const {isDevEnv} = require('node-utils')();
+const {isDevEnv} = require('node-toolbox')();
 isDevEnv(); // {isDev: true, env: 'dev'};
 ```
 ```javascript
-const {isDev} = require('node-utils')();
+const {isDev} = require('node-toolbox')();
 isDev(); // true
 ```
 ```bash
 export NODE_ENV=prod;
 ```
 ```javascript
-const {isDevEnv, isDev} = require('node-utils')();
+const {isDevEnv, isDev} = require('node-toolbox')();
 isDev(); // false
 isDevEnv(); // {isDev: false, env: 'prod'};
 ```
@@ -35,7 +35,7 @@ isDevEnv(); // {isDev: false, env: 'prod'};
 - sync - loads a config file from your project directory.
 
 ```javascript
-const {loadConfig} = require('node-utils')();
+const {loadConfig} = require('node-toolbox')();
 loadConfig();
 ```
    defaults to:
@@ -81,10 +81,10 @@ Project
 1. Note that if you don't specify an extension name the function will default to a `.json` file format.
 2. You can require the module in one of two flavours
    ```javascript
-   const {loadConfig} = require('node-utils')()
+   const {loadConfig} = require('node-toolbox')()
    ```
    or
    ```javascript
-   const {loadConfig} = require('node-utils')(__dirname);
+   const {loadConfig} = require('node-toolbox')(__dirname);
    ```
    The former allows you to specify a path individually per function call or bind a path to all subsequent calls.
